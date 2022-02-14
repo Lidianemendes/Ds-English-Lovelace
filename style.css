@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.center{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb (200, 200, 200);
+}
+.hamburguer{
+    display: none;
+}
+.logo{
+    color: black;
+    width: 50%;
+}
+h2{
+    font-weight: 800;
+    font-size: 22px;
+    margin-left: 5%;
+}
+nav{
+    font-weight: normal;
+    width: 50%;
+    height: 5vh;
+}
+a{
+    font-weight: normal;
+    color:blue; 
+    text-decoration: none;
+}
+ul{
+    width: 100%;
+    height: 30px;
+    opacity: 100%;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    text-decoration: none;
+}
+li:hover{
+    color: black;
+    background-color: rgb(236, 235, 139);
+    font-weight: 900;
+    cursor: pointer;
+}
+header h1{
+    color: rgb(235, 22, 58);
+    background-color: white;
+    font-size: 35px;
+    margin-bottom: 65vh;
+    margin-left: 61%;
+}
+header p{
+    color: rgba(229, 245, 82, 0.829);
+    font-size:35px; 
+    background-color: blue;
+    
+}
+.Ada{
+    width: 100%;
+    height: 88vh;
+    background-image: url('img/lovelace\ principal.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.Ada-text{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+.fotos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start
+}
+.imagem-corpo{
+    width: 280px;
+    height: 280px;
+    border: solid #f7f7f7;
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+.site-text{
+    height: 45vh;
+    margin-left: 13px;
+}
+.site-text p{
+    text-align: center;
+    height:12vh;
+    margin-left: 10px; 
+}
+.cont-text{
+    height: 30vh;
+    margin-left: 13px;
+     
+}
+.cont-text p{
+    text-align: center;
+    height:10vh;
+    margin-left: 10px;
+}
+footer{
+    width: 100%;
+    height: 15vh;
+    justify-content:space-around;
+    background-color: #eeeded
+}
+.redes-sociais{
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+.redes-img{
+    width: 30%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.copy{
+    width:60%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    margin-left: 35%;
+}
+.fonte{
+    color: black;
+    width: 40%;
+    margin-top: 1%;
+    margin-left: 20%;
+    font-size: 11px;
+    font-weight: normal;
+    height: 7vh;
+}
+.topo{
+    display: none;
+
+}
+ @media(max-width: 375px){
+    body{
+        height: 120vh;
+        background-size: auto;
+    }
+    header{
+        height: 100%;
+        background-size: auto;
+    }
+    nav{
+        display: none;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .Ada{
+        background-image: url(./img/laranja\ azul\ recorte\ 375.png);
+        display: flex;
+        background-size: auto;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .Ada-text{
+        position: absolute;
+        width: 60%;
+        top: 95%;  
+        height: 2%;
+    }
+    .hamburguer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        position: relative;
+        width: 30%;
+        height: 100%;
+    }
+    .fotos{
+        height: 90%;
+        margin-left: 7%;
+        margin-top: 7%;
+    }
+    main{
+        height: 683vh;
+        width: 100%;
+    }
+    footer{
+        height: 40%;
+        background-color: #f7f7f7;
+    }
+    .redes-sociais{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .redes-img{
+        background-color: rgb(101, 223, 213);
+        width: 85%;
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .redes-img img{
+        display: flex;
+        justify-content: space-around;
+        height:50%;
+        margin-top: 3%;
+    }
+    .topo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        position: relative;
+        left: 80%;
+        bottom: 80%;
+        width: 20%;
+        height: 20%;
+    }
+    button{
+        color: rgb(180, 161, 161);
+    }
+    .copy{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 70%;
+        height: 50%;
+    }
+    .fonte{
+        font-size: 8px;
+        width: 60%;
+        height: 70%;
+        margin-top: 10%;
+    }
+    
+ }
